@@ -1,3 +1,9 @@
+/*
+Para aumentar ou diminuir o card, edite o Content
+Para alterar o tamanho dos inputs, Input e Select.
+Para alterar a cor do button, Button.
+*/
+
 import styled from "styled-components";
 import pergaminho from "../../Components/Background/pergaminho.jpg";
 

@@ -1,3 +1,7 @@
+/*
+Para aumentar a área dos Textos, edite o TextContainer.
+Para alterar o tamanho da imagem, edite o ImageContainer.
+*/
 import styled from "styled-components";
 import pergaminho from "../../Components/Background/pergaminho.jpg"; // Não usado no código, mas mantido
 

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+//Área da home
+//Para mudar o background altere o background-image.
 export const MainArea = styled.main`
   width: 100%;
   min-height: 89vh;
@@ -13,6 +15,7 @@ export const MainArea = styled.main`
   padding: 0 15px;
 `;
 
+//Container central do texto.
 export const Content = styled.div`
   text-align: center;
   max-width: 50%;
@@ -20,6 +23,10 @@ export const Content = styled.div`
   padding: 0 20px;
 `;
 
+/*
+Título da home.
+Para mudar o tamanho em cada tela, mude as media queries.
+*/
 export const Title = styled.h1`
   margin-bottom: 16px;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -46,6 +53,7 @@ export const Title = styled.h1`
   }
 `;
 
+//texto da página.
 export const Text = styled.p`
   line-height: 1.6;
   font-size: 16px;

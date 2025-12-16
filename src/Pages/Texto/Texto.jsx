@@ -1,3 +1,8 @@
+/*
+Página de texto, em que o user escreve e envia o texto para ser traduzido.
+Para mudar o tamanho do input ou da área, edite os componentes no styles.js
+*/
+
 import { useState } from "react";
 import Header from "../../Components/Header/Header";
 import { Botao1, Botao2, Container, Input, Transcrito } from "./styles";
@@ -5,7 +10,7 @@ import { useTranscreverTexto } from "../../Hooks/useTranscricao";
 
 export default function Texto() {
   const [text, setText] = useState("");
-
+  //Hook que envia o texto para o backend traduzir.
   const {
     mutate: transcreverTexto,
     data,
@@ -27,7 +32,7 @@ export default function Texto() {
       transcreverTexto({ text });
     }
   };
-
+  //Limpa o campo e o resultado
   const handleLimparTraducao = () => {
     setText("");
     reset();

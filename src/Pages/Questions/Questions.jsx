@@ -1,3 +1,9 @@
+/*
+Página das perguntas.
+Exibe a lista de termos e a imagem lateral.
+Para mudar o tamanho do quadro ou imagem, edite o TextContainer e ImageContainer no styles.js
+*/
+
 import {
   Container,
   ImageContainer,
@@ -11,6 +17,7 @@ import Header from "../../Components/Header/Header";
 import image from "../../Components/Image/Magister.png";
 
 export default function Questions() {
+  //Lista de textos.
   const texts = [
     "Deus = Espírito Amor.",
     "Jesus Cristo = Sacrifício pelo",

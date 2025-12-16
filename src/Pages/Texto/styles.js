@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import pergaminho from "../../Components/Background/pergaminho.jpg";
 
+//Controle o fundo e a posição dos elementos.
 export const Container = styled.div`
   background-image: url(${pergaminho});
   background-size: cover;
@@ -30,7 +31,7 @@ export const Container = styled.div`
     position: relative;
   }
 `;
-
+//Área onde o user digita
 export const Input = styled.textarea`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
@@ -71,7 +72,7 @@ export const Input = styled.textarea`
     height: 14vh;
   }
 `;
-
+//Botão de transcrição
 export const Botao1 = styled.button`
   background-color: #d5c97b;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -97,7 +98,7 @@ export const Botao1 = styled.button`
     font-size: 14px;
   }
 `;
-
+//Botão de limpar texto
 export const Botao2 = styled.button`
   background-color: #d5c97b;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -123,7 +124,7 @@ export const Botao2 = styled.button`
     font-size: 14px;
   }
 `;
-
+//Caixa com o texto traduzido
 export const Transcrito = styled.div`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;

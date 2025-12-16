@@ -1,3 +1,10 @@
+/*
+Página de Login
+.Página que faz a autenticação básica e define o nome e profissão.
+.Para alterar a dimensão dos botões e inputs basta editar os componentes no styles.js (Input, Select, Button).
+
+*/
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
@@ -12,11 +19,12 @@ import {
 } from "./styles";
 import Header from "../../Components/Header/Header";
 function Login() {
-  const [nome, setNome] = useState("");
-  const [profissao, setProfissao] = useState("estudante");
-  const { login } = useAuth();
+  const [nome, setNome] = useState(""); //armazena o nome.
+  const [profissao, setProfissao] = useState("estudante"); //armazena a profissão.
+  const { login } = useAuth(); //salva globalmente o user
   const navigate = useNavigate();
 
+  //envia dados e redireciona
   const handleSubmit = (e) => {
     e.preventDefault();
     login(nome, profissao);

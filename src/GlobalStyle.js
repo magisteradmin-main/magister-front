@@ -1,3 +1,8 @@
+/*
+Estilo global
+.Para editar as fontes e a cor de background, edite o body.
+*/
+
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
